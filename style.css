@@ -18,6 +18,28 @@ body {
     letter-spacing: 5px;
 }
 
+#winScreen{
+    position: absolute;
+    left:0;
+    right: 0;
+    font-size: 50px;
+    height: 100vh;
+    z-index: 1;
+    background: white;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    color:white;
+    
+}
+
+.hide{
+    display: none !important;
+}
+
 #header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +47,7 @@ body {
     border: 3px solid hsl(217, 16%, 45%);
     width: 800px;
     border-radius: 30px;
-    margin: 100px auto 150px auto;
+    margin: 100px auto 100px auto;
     align-items: center;
 }
 
@@ -50,13 +72,14 @@ body {
     text-align: center;
 }
 
-#current-score {
+.current-score {
     color: hsl(229, 25%, 31%);
     font-size: 5rem;
 }
 
 #game {
     position: relative;
+    margin-top: 50px;
 }
 
 #paper {
@@ -130,11 +153,11 @@ button:hover{
     align-self: center;
 }
 #resultText p{
-    font-size: 40px;
+    font-size: 34px;
     margin-bottom: 20px;
     font-weight: bold;
 }
-#resultText button{
+#resultText button, #winScreen button{
     padding: 20px 50px;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -142,7 +165,59 @@ button:hover{
     background-color: white;
     border-radius: 10px;;
 }
-#resultText button:hover{
+#resultText button:hover, #winScreen button:hover{
     color:red;
 }
 
+#show-rules{
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 20px 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+#show-rules:hover{
+    background: white;
+    color: hsl(237, 49%, 15%);
+    
+}
+#overlay{
+    position: absolute;
+    left:0;
+    right: 0;
+    font-size: 35px;
+    height: 100vh;
+    z-index: 1;
+    background: hsla(213, 9%, 77%, 0.495);
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color:white;
+    font-weight: bold;
+    letter-spacing: normal;
+}
+#rules{
+    background: white;
+    color: black;
+    padding: 50px;
+    border-radius:20px;
+}
+.rules-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.rules-header button{
+    width: 50px;
+    background: none;
+    border:none
+}
