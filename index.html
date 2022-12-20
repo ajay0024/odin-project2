@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Project 2</title>
-    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
+
 <body>
- 
+    <div id="header">
+        <div class="logo">
+            <img src="./images/logo.svg" alt="">
+        </div>
+        <div class="score">
+            <p>Your Score</p>
+            <p id="current-score">0</p>
+        </div>
+        <div class="score">
+            <p>Comp Score</p>
+            <p id="current-score">0</p>
+        </div>
+    </div>
+    <div id="game">
+        <img src="./images/bg-triangle.svg" alt="">
+        <button id="paper" class="option-button"><img src="./images/icon-paper.svg" alt="icon-paper"></button>
+        <button id="rock" class="option-button"><img src="./images/icon-rock.svg" alt="icon-rock"></button>
+        <button id="scissors" class="option-button"><img src="./images/icon-scissors.svg" alt="icon-scissors"></button>
+    </div>
+
 </body>
+
 </html>
