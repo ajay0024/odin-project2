@@ -201,7 +201,6 @@ button:hover{
     align-items: center;
     gap: 50px;
     color:white;
-    font-weight: bold;
     letter-spacing: normal;
 }
 #rules{
@@ -215,9 +214,14 @@ button:hover{
     justify-content: space-between;
     margin-bottom: 30px;
     align-items: center;
+    font-weight: bold;
 }
 .rules-header button{
     width: 50px;
     background: none;
     border:none
+}
+#rules img{
+    display: block;
+    margin: 20px auto;
 }
